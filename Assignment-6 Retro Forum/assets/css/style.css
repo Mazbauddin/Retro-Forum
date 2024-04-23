@@ -1,0 +1,53 @@
+/* Google font link here */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* default css start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.mulish-fonts {
+  font-family: "Mulish", sans-serif;
+}
+
+.inter-fonts {
+  font-family: "Inter", sans-serif;
+}
+/* custom css */
+.banner-img {
+  background-image: url(../images/bgbanner.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.latest-posts-card {
+  width: 100%;
+}
+
+.title-content-left {
+  display: flex;
+  flex-basis: content;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding: 20px;
+  background: #ffffff;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.p1-style {
+  width: 75%;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+}

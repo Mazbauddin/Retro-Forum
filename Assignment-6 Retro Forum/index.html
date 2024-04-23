@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <!-- daisyUi and tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <!-- font Awesome link here -->
+    <script
+      src="https://kit.fontawesome.com/89c801a01d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css here -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="py-8 mx-5 md:mx-5 lg:mx-0">
+      <!-- navbar area start -->
+
+      <div class="nav container mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#797dfc] rounded-box w-52"
+              >
+                <li><a class="text-white">Home</a></li>
+                <li><a class="text-white">About</a></li>
+                <li><a class="text-white">Users</a></li>
+                <li><a class="text-white">Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl"
+              ><img src="assets/images/logo.png" alt=""
+            /></a>
+          </div>
+          <div class="navbar-end">
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-8">
+                <li class="">
+                  <a
+                    class="tooltip tooltip-primary border-[1px] mr-3 border-gray-300 rounded-full p-3 hover:bg-[#797dfc] hover:border-[#797dfc] hover:text-white transition duration-300 ease-out hover:ease-in"
+                    data-tip="Home"
+                    ><i class="fa-solid fa-house"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="tooltip tooltip-primary border-[1px] mr-3 border-gray-300 rounded-full p-3 hover:bg-[#797dfc] hover:border-[#797dfc] hover:text-white transition duration-300 ease-out hover:ease-in"
+                    data-tip="About"
+                    ><i class="fa-solid fa-pen"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="tooltip tooltip-primary border-[1px] mr-3 border-gray-300 rounded-full p-3 hover:bg-[#797dfc] hover:border-[#797dfc] hover:text-white transition duration-300 ease-out hover:ease-in"
+                    data-tip="User"
+                    ><i class="fa-solid fa-user-plus"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="tooltip tooltip-primary border-[1px] border-gray-300 rounded-full p-3 hover:bg-[#797dfc] hover:border-[#797dfc] hover:text-white transition duration-300 ease-out hover:ease-in"
+                    data-tip="Contact"
+                    ><i class="fa-brands fa-font-awesome"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <a
+                class="btn bg-[#797dfc] mulish-fonts font-bold rounded-[25px] px-8 text-white border-1 border-[#797dfc] hover:text-[#797dfc] hover:border-[#797dfc] hover:bg-transparent transition duration-300 ease-out hover:ease-in"
+                >Sign In</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar area end -->
+    </header>
+    <main class="container mx-auto">
+      <!-- banner area start -->
+      <section class="banner-area mx-8 lg:mx-0 mb-10">
+        <div class="bg-[#12132d] rounded-[45px] mt-5">
+          <div class="banner-img p-10 lg:p-20">
+            <div class="grid grid-cols-1 lg:grid-cols-6 justify-between">
+              <div class="col-span-4">
+                <h1
+                  class="lg:w-3/4 text-4xl lg:text-7xl mulish-fonts font-black text-white leading-normal"
+                >
+                  Welcome to the
+                  <span class="text-[#5255ae]">ReTro</span>
+                  Forum
+                </h1>
+                <p
+                  class="md:w-3/4 lg:w-3/4 text-xl mulish-fonts font-medium text-white py-8"
+                >
+                  Welcome to our company! We're so excited to have you visit our
+                  forum website.
+                </p>
+                <div class="">
+                  <input
+                    id="search-box"
+                    class="input input-bordered rounded-[50px] h-14 relative w-[270px] md:w-[400px] lg:w-[350px]"
+                    placeholder="Search here anything"
+                  />
+                  <button
+                    onclick="handleSearch()"
+                    class="px-5 tooltip tooltip-primary lg:px-9 py-2 md:translate-y-[0%] lg:translate-y-[0%] translate-y-[-113%] translate-x-[190%] md:translate-x-[-110%] lg:translate-x-[-110%] text-white rounded-full bg-[#797dfc] hover:bg-transparent hover:text-[#797dfc] border-2 hover:border-[#797dfc] border-[#797dfc]"
+                    data-tip="Search anything if you need just click me"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-span-2 bg-white p-4 mt-5 mb-5 lg:mb-0 lg:mt-0 lg:p-10 h-full rounded-[25px]"
+              >
+                <ul>
+                  <li
+                    class="text-2xl mulish-fonts font-medium text-[#12132DCC] flex justify-between gap-5 lg:gap-10 pb-4"
+                  >
+                    Registered Users <span class="">01</span>
+                  </li>
+                  <li
+                    class="text-2xl mulish-fonts font-medium text-[#12132DCC] flex justify-between gap-10 pb-4"
+                  >
+                    Forum <span class="">05</span>
+                  </li>
+                  <li
+                    class="text-2xl mulish-fonts font-medium text-[#12132DCC] flex justify-between gap-10 pb-4"
+                  >
+                    Topics <span class="">01</span>
+                  </li>
+                  <li
+                    class="text-2xl mulish-fonts font-medium text-[#12132DCC] flex justify-between gap-10"
+                  >
+                    Replies <span class="">01</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner area end -->
+      <!-- discuss area start -->
+      <section class="discuss-area mx-8 lg:mx-0">
+        <div class="site-heading text-center my-20">
+          <h1 class="mulish-fonts font-black text-3xl lg:text-5xl mb-5">
+            Let’s Discuss
+          </h1>
+          <p class="font-normal inter-fonts">
+            Yes, you can run unit tests and view the results directly within the
+            app. The <br />
+            integrated testing features allow for a streamlined.
+          </p>
+        </div>
+        <div id="loading-spinner" class="text-center hidden">
+          <span class="loading loading-bars text-primary loading-lg"></span>
+        </div>
+
+        <div class="discuss-part grid grid-cols-1 lg:grid-cols-12 gap-7">
+          <div
+            id="discuss-container"
+            class="w-full discuss-content md:col-span-12 lg:col-span-8"
+          ></div>
+          <div
+            id="discuss-title-container"
+            class="w-[370px] md:w-full lg:w-full title-posts md:col-span-12 lg:col-span-4 mx-auto"
+          >
+            <div class="bg-[#f3f3f4] shadow-xl col-span-2 p-8 rounded-xl">
+              <div class="discuss-title flex justify-between">
+                <h2 class="mulish-fonts font-bold text-lg mb-4">Title</h2>
+                <p class="text-[#12132D99] font-bold">
+                  <i class="fa-solid fa-check-double text-green-600 mr-3"></i
+                  >Mark as read (<span id="mark-as-read">0</span>)
+                </p>
+              </div>
+              <div
+                id="selected-content"
+                class="discuss-title-content grid grid-cols-1 lg:grid-cols-1"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- discuss area end -->
+      <!-- forum area start -->
+      <section class="forum-area mb-10 mt-20 mx-8 lg:mx-0">
+        <div class="bg-[#12132d] rounded-[45px] mt-5">
+          <div class="forum-left">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-12 justify-between"
+            >
+              <div class="col-span-8 pt-20 pl-10 lg:pl-20 pb-8 lg:pb-16">
+                <h1
+                  class="text-4xl lg:text-7xl mulish-fonts font-black text-white leading-normal"
+                >
+                  Join Our Forum
+                </h1>
+                <p
+                  class="text-xl mulish-fonts font-medium text-white pr-5 lg:pr-0 py-8 w-4/5"
+                >
+                  You're invited to join the conversation at the Forum, an
+                  online event featuring expert discussions the app.
+                </p>
+                <button
+                  class="btn text-white rounded-full bg-[#797dfc] font-bold border-2 border-[#797dfc] hover:bg-transparent hover:text-[#797dfc] hover:border-[#797dfc] px-9 transition duration-300 ease-out hover:ease-in"
+                >
+                  Registered Now
+                </button>
+              </div>
+              <div class="col-span-4 rounded-[25px] pr-10 mt-[100px]">
+                <img
+                  class="mx-auto"
+                  src="./assets/images/joinforum.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- forum area end -->
+      <!-- latest post area start -->
+      <section class="latest-post-area pb-20 mx-8 lg:mx-0">
+        <div class="container mx-auto">
+          <div class="site-heading text-center my-20">
+            <h1 class="mulish-fonts font-black text-3xl lg:text-5xl mb-5">
+              Latest Posts
+            </h1>
+            <p class="font-normal inter-fonts">
+              Do you want to show our latest posts? Displaying recent posts help
+              users <br />
+              easily discover our new content and spend more time on our site.
+            </p>
+          </div>
+          <div
+            id="latest-post"
+            class="latest-post-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-between"
+          ></div>
+        </div>
+      </section>
+
+      <!-- latest post area end -->
+    </main>
+    <!-- footer area start -->
+    <footer class="footer footer-center p-10 bg-[#f5f5f6] text-primary-content">
+      <div class="container mx-auto">
+        <aside>
+          <div class="footer-logo my-5">
+            <img class="mx-auto" src="assets/images/logo.png" alt="" />
+          </div>
+          <p
+            class="font-normal mulish-fonts text-base text-[#12132DB3] mt-3 mb-5"
+          >
+            Retro Forum is a digital platform to make your daily commuting
+            better.
+          </p>
+        </aside>
+        <nav class="">
+          <div class="grid grid-flow-col gap-8 pb-10">
+            <a
+              class="text-lg cursor-pointer tooltip-primary tooltip text-[#12132D] hover:text-[#797dfc]"
+              data-tip="Twitter"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              class="text-lg cursor-pointer tooltip-primary tooltip text-[#12132D] hover:text-[#797dfc]"
+              data-tip="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              class="text-lg cursor-pointer tooltip-primary tooltip text-[#12132D] hover:text-[#797dfc]"
+              data-tip="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              class="text-lg cursor-pointer tooltip-primary tooltip text-[#12132D] hover:text-[#797dfc]"
+              data-tip="github"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </nav>
+        <div
+          class="copyright-area w-full border-t border-base-300 text-[#12132D80]"
+        >
+          <p class="pt-10 pb-12">Copyright © 2024 - All right reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- script file here -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
